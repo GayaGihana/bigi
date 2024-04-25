@@ -1,0 +1,30 @@
+{
+    "name": "BIGI",
+    "description": "Hello Bro.",
+    "repository": "https://www.youtube.com/@BiGivideo/videos",
+    "logo": "https://github.com/GayaGihana/GayaGihana/blob/main/a3cb3587e86dd31a0bc3d.jpg",
+    "keywords": [
+        "nodejs",
+        "Bot",
+        "WhatsApp Gihaa Bot"
+    ],
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "13"
+            }
+        }
+    ],
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "standard-1x"
+        }
+    }
+}
